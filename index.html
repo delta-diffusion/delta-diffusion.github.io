@@ -1,11 +1,493 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Video Creation by Demonstration">
+  <meta property="og:title" content="Video Creation by Demonstration">
+  <meta property="og:description" content="Video Creation by Demonstration">
+  <meta property="og:image" content="https://delta-diffusion.github.io/static/images/arch_a.png">
+  <meta property="twitter:title" content="Video Creation by Demonstration">
+  <meta property="twitter:description" content="Video Creation by Demonstration">
+  <meta property="twitter:image" content="https://delta-diffusion.github.io/static/images/arch_a.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="generative ai, controllable video generation, video foundation models, world simulation, google deepmind">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Creation by Demonstration</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="static/images/favicon.svg">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+
 </head>
 <body>
-    <p></p>
+
+<!-- Title/Authors/Institutions/Links -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- Title -->
+          <h1 class="title is-1 publication-title">Video Creation by Demonstration</h1>
+          <!-- <h2 class="title is-size-3">Venue</h2> -->
+          <!-- Title -->
+
+          <!-- Authors -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yihongsun.github.io/">Yihong Sun</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://zhhoper.github.io/">Hao Zhou</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=1H9CkZgAAAAJ">Liangzhe Yuan</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jenjsun.com/">Jennifer J. Sun</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cold-winter.github.io/">Yandong Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=vO0VSSYAAAAJ">Xuhui Jia</a><sup>1</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=fWd88tEAAAAJ">Hartwig Adam</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://garyzhao.github.io/">Long Zhao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.tliu.org/">Ting Liu</a><sup>1</sup>
+            </span>
+          </div>
+          <!-- Authors -->
+          
+          <!-- Institutions -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Google DeepMind &nbsp; </span>
+            <span class="author-block"><sup>2</sup>Cornell University</span>
+          </div>
+          <!-- Institutions -->
+
+          <!-- Links -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/xxxx.xxxxx.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xxxx.xxxxx"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="additional.html"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-video"></i>
+                  </span>
+                  <span>More results</span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- Links -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Title/Authors/Institutions/Links -->
+
+
+<!-- Teaser -->
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered" style="margin-top: -30pt; margin-bottom: -5pt;">
+      <!-- Column 1 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT28B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK2A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT50A.mp4" type="video/mp4"></video>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT237A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT147B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT66A.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="subtitle has-text-justified">
+      <p>
+        <strong>Video Creation by Demonstration.</strong> Given a demonstration video, our proposed \(\delta\)-Diffusion generates a video that naturally continues from a context images and carries out the same action concepts.
+        <br></br>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Teaser -->
+
+
+<!--/ Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We explore a novel video creation experience, namely <em>Video Creation by Demonstration</em>. Given a demonstration video and a context image that may not be perfectly aligned, we generate a physically plausible video that continues naturally from the context image and carries out the action concepts from the demonstration. To enable this capability, we present \(\delta\)-Diffusion, a self-supervised training approach that learns from unary unlabeled videos by conditional future frame prediction. Unlike most existing video generation controls that are based on explicit signals, we adopts the form of implicit latent control for maximal flexibility and expressiveness required by general videos. By leveraging a video foundation model with an appearance bottleneck design on top, we extract action latents from demonstration videos for conditioning the generation process with minimal appearance leakage. Empirically, \(\delta\)-Diffusion outperforms related works in terms of both human preference and large-scale machine evaluations, and demonstrates potentials towards interactive world simulation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Abstract -->
+
+
+<!--/ Methodology -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Methodology</h2>
+        <img class="architecture" src="static/images/arch.png" alt="">
+        <h2 class="subtitle has-text-justified">
+          <p>
+            <strong>(a) Overview of \(\delta\)-Diffusion.</strong> 
+            The context frame \(I\) is provided to the generation model \(\mathcal{G}\) along with the action latents \(\delta_v\) extracted from the demonstration video \(V\). 
+            <strong>(b) Extracting action latents.</strong>
+            A spatial-temporal vision encoder is applied to extract temporally-aggregated spatiotemopral representations \(\mathbf{z}\) from an input video \(V\), with \(t\) denoting the temporal dimension. In parallel, a spatial vision encoder extracts per-frame representations from $V$, which is aligned to \(\mathbf{z}\) by feature predictor \(\mP\) as \(\mathbf{h}\). The appearance bottleneck then computes the action latents \(\delta_V\) by subtracting the aligned spatial representations \(\mathbf{h}\) from the spatiotemporal representations.
+          </p>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Methodology -->
+
+
+<!-- Qualitative Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" id="qres">Qualitative Results</h2>
+        <div class="content has-text-justified">
+          <!-- <p> -->
+          <!--   In this section, we show qualitative samples from \(\delta\)-Diffusion. -->
+          <!-- </p> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SSv2 -->
+    <div class="columns is-centered has-text-centered" style="margin-top:30pt; margin-bottom:-17pt">
+        <h2 class="title is-4">Something-Something v2<br></br></h2>
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Column 1 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT110A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT12B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT48A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT133A.mp4" type="video/mp4"></video>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT352B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT147.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT139B_.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ssv2/ext_SS-EXT130A.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="subtitle has-text-justified" style="margin-top:-17pt">
+      <p>* Emoji is added for preserving anonymity in visualization, not during training or sampling.</p>
+      <p>* See additional results <a href="additional.html#qres_ssv2">here</a>.</p>
+    </div>
+    <!-- SSv2 -->
+
+
+    <!-- EK100 -->
+    <div class="columns is-centered has-text-centered" style="margin-top:30pt; margin-bottom:-17pt">
+        <h2 class="title is-4">Epic Kitchens 100<br></br></h2>
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Column 1 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT142B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT10A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT118B.mp4" type="video/mp4"></video>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT139A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT144B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT149B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/ek100/ext_EK-EXT118A.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="subtitle has-text-justified" style="margin-top:-17pt">
+      <p>* See additional results <a href="additional.html#qres_ek100">here</a>.</p>
+    </div>
+    <!-- EK100 -->
+
+
+    <!-- Fractal -->
+    <div class="columns is-centered has-text-centered" style="margin-top:30pt; margin-bottom:-17pt">
+        <h2 class="title is-4">Fractal<br></br></h2>
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Column 1 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_FR17A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT1A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT38B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT55B.mp4" type="video/mp4"></video>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="column video-ours">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT49B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT31A.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_FR15B.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/main/fractal/ext_SS-EXT3A.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="subtitle has-text-justified" style="margin-top:-17pt">
+      <p>* See additional results <a href="additional.html#qres_fractal">here</a>.</p>
+    </div>
+    <!-- Fractal -->
+
+
+  </div>
+</section>
+<!-- Qualitative Results -->
+
+
+<!-- Controllable Generation -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" id="cbd">Controllability by Demonstration</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this section, we showcase controllability of using different demonstration videos for the same context image. The context image is shown and paused initially in the generated videos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column video-af">
+        <video id="col1-video1" autoplay muted loop playsinline width="100%">
+          <source src="static/videos/demo_control/SS-AF1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column video-af">
+        <video id="col1-video2" autoplay muted loop playsinline width="100%">
+          <source src="static/videos/demo_control/SS-AF2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column video-af">
+        <video id="col1-video3" autoplay muted loop playsinline width="100%">
+          <source src="static/videos/demo_control/FR-AF1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column video-af">
+        <video id="col1-video4" autoplay muted loop playsinline width="100%">
+          <source src="static/videos/demo_control/FR-AF2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Controllable Generation -->
+
+
+<!-- Auto-regressive Generation -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" id="ar_gen">Auto-regressive Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Auto-regressive generation controlled via a sequence of different demonstration videos of varying lengths. 
+            <br>
+            The three demonstration videos are placed side-by-side for visualization purpose. During inference, they are passed in sequentially, specified by the order of actively playing demonstration videos.
+            <br></br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered">
+      <div class="column video-ar">
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/ar/ar_ek100_1.mp4" type="video/mp4"></video>
+        <video id="x" autoplay muted loop playsinline width="100%"> <source src="static/videos/ar/ar_robotics_1.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Autoregressive Generation -->
+
+
+<!-- More Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">More Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Please refer to <a href="additional.html">this page</a> for more <a href="additional.html#qres">qualitative samples</a>, <a href="additional.html#ab_ablation">ablation study</a> on the appearance bottleneck, <a href="additional.html#qbaseline">qualitative comparisons</a> against prior works, and <a href="additional.html#fc">failure cases</a>.
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More Results -->
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/delta-diffusion/delta-diffusion.github.io" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+
+
+<!-- Scripts for Generating Captions -->
+<script>
+  function createLabelTable(labels, widths) {
+    const table = document.createElement('table');
+    table.style = "border-collapse: collapse; width:100%; margin-top:0pt;";
+
+    const tr = document.createElement('tr');
+    tr.style = "margin: 0; border: 0";
+
+    labels.forEach((label, index) => {
+      const td = document.createElement('td');
+      td.style = `width:${widths[index]}; padding: 0; margin: 0; border: 0; text-align: middle;`;
+
+      const h2 = document.createElement('h2');
+      h2.className = "has-text-centered is-5";
+      h2.textContent = label;
+
+      td.appendChild(h2);
+      tr.appendChild(td);
+    });
+
+    table.appendChild(tr);
+    return table;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.video-ours').forEach(column => {
+      const labelTable = createLabelTable(['Demonstration', 'Context Image', 'Generation'], ['33%', '34%', '33%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+
+    document.querySelectorAll('.video-abl').forEach(column => {
+      const labelTable = createLabelTable(['Demonstration', 'Context Image', 'No Bottleneck', 'Temporal Norm.', 'Ours'], ['20%', '20%', '20%', '20%', '20%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+
+    document.querySelectorAll('.video-comp').forEach(column => {
+      const labelTable = createLabelTable(['Demonstration', 'Context Image', 'Motion Director', 'WALT (finetune)', 'Ours'], ['20%', '20%', '20%', '20%', '20%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+
+    document.querySelectorAll('.video-ar').forEach(column => {
+      const labelTable = createLabelTable(['Demonstration #1', 'Demonstration #2', 'Demonstration #3', 'Context Image', 'Ours'], ['20%', '20%', '20%', '20%', '20%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+
+    document.querySelectorAll('.video-af').forEach(column => {
+      const labelTable = createLabelTable(['Demonstration', 'Generation', '', 'Demonstration', 'Generation', '', 'Demonstration', 'Generation'], ['16.3%', '16.3%', '1.1%', '16.3%', '16.3%', '1.1%', '16.3%', '16.3%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+
+    document.querySelectorAll('.ctx-frame').forEach(column => {
+      const labelTable = createLabelTable(['Context', ''], ['50%', '50%']);
+      column.insertBefore(labelTable, column.children[0]);
+    });
+  }
+);
+</script>
+<!-- Scripts for Generating Captions -->
+
 </body>
 </html>
+
