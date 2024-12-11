@@ -192,7 +192,7 @@
             <strong>(a) Overview of \(\delta\)-Diffusion.</strong> 
             The context frame \(I\) is provided to the generation model \(\mathcal{G}\) along with the action latents \(\delta_v\) extracted from the demonstration video \(V\). 
             <strong>(b) Extracting action latents.</strong>
-            A spatial-temporal vision encoder is applied to extract temporally-aggregated spatiotemopral representations \(\mathbf{z}\) from an input video \(V\), with \(t\) denoting the temporal dimension. In parallel, a spatial vision encoder extracts per-frame representations from $V$, which is aligned to \(\mathbf{z}\) by feature predictor \(\mP\) as \(\mathbf{h}\). The appearance bottleneck then computes the action latents \(\delta_V\) by subtracting the aligned spatial representations \(\mathbf{h}\) from the spatiotemporal representations.
+            A spatial-temporal vision encoder is applied to extract temporally-aggregated spatiotemopral representations \(\mathbf{z}\) from an input video \(V\), with \(t\) denoting the temporal dimension. In parallel, a spatial vision encoder extracts per-frame representations from \(V\), which is aligned to \(\mathbf{z}\) by feature predictor \(\mathcal{P}\) as \(\mathbf{h}\). The appearance bottleneck then computes the action latents \(\delta_V\) by subtracting the aligned spatial representations \(\mathbf{h}\) from the spatiotemporal representations.
           </p>
         </h2>
       </div>
